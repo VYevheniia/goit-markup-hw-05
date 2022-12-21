@@ -172,6 +172,9 @@ ul {
 .nav-link {
   color: var(--color-primery);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-header {
@@ -182,6 +185,9 @@ ul {
   align-items: center;
   fill: var(--color-secondary);
   gap: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -190,7 +196,6 @@ ul {
 .contact-header:focus {
   color: var(--color-accent);
   fill: var(--color-accent);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section "Ефективні рішення для вашого бізнесу" */
@@ -225,6 +230,8 @@ ul {
   padding: 10px 24px;
   border-radius: 4px;
   border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero {
@@ -235,7 +242,6 @@ ul {
 .button:hover,
 .button:focus {
   background-color: var(--color-button-accent);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section "Наші переваги" */
@@ -399,13 +405,15 @@ ul {
   border-radius: 50%;
   background-color: var(--color-additional);
   fill: var(--color-icons);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover,
 .social-links:focus {
   background-color: var(--color-accent);
   fill: var(--color-additional);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Секція "Постійні клієнти" */
@@ -444,13 +452,15 @@ ul {
   fill: var(--color-icons);
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--color-accent);
   border-color: var(--color-accent);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -484,11 +494,15 @@ ul {
 .footer-address {
   color: var(--color-additional);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact {
   color: var(--color-additional-second);
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
@@ -496,7 +510,6 @@ ul {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--color-accent);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-socials {
@@ -531,13 +544,15 @@ ul {
   border-radius: 50%;
   background-color: var(--color-bgc-footer-icons);
   fill: var(--color-additional);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-footer:hover,
 .social-links-footer:focus {
   background-color: var(--color-accent);
   fill: var(--color-additional);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфоліо */
@@ -566,6 +581,9 @@ ul {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -573,7 +591,6 @@ ul {
   color: var(--color-white-bgc);
   background-color: var(--color-accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* img */
@@ -622,7 +639,7 @@ ul {
   height: 294px;
 
   transform: translateY(100%);
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: rgba(33, 150, 243, 0.9);
   color: var(--color-additional);
@@ -636,7 +653,6 @@ ul {
 .portfolio-card:hover .text-overlay,
 .portfolio-card:focus .text-overlay {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-portf-text {
@@ -648,7 +664,6 @@ ul {
 .portfolio-card:hover,
 .portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Modal */
@@ -662,14 +677,15 @@ ul {
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transform: scale(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -682,13 +698,18 @@ ul {
   border-radius: 4px;
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll; */
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .closed {
@@ -705,6 +726,10 @@ ul {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  /* opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
   /* display: flex;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
